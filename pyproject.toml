@@ -3,7 +3,7 @@ requires = ["setuptools>=61.2", "setuptools_scm[toml]>=3.4.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "requests-file"
+name = "requests-stdin"
 authors = [{name = "huakim", email = "fijik19@gmail.com"}]
 license = {text = "Apache 2.0"}
 description = "File transport adapter for Requests"
@@ -15,7 +15,7 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
 ]
-urls = {Homepage = "https://github.com/huakim/python-requests-text"}
+urls = {Homepage = "https://github.com/huakim/python-requests-stdin"}
 dependencies = ["requests>=1.0.0"]
 dynamic = ["version"]
 
