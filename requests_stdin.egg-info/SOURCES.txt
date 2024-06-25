@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requests_stdin.py
+test_setup.py
+__pycache__/requests_stdin.cpython-311.pyc
+__pycache__/test_setup.cpython-311-pytest-7.4.4.pyc
+__pycache__/test_setup.cpython-311.pyc
+requests_stdin.egg-info/PKG-INFO
+requests_stdin.egg-info/SOURCES.txt
+requests_stdin.egg-info/dependency_links.txt
+requests_stdin.egg-info/requires.txt
+requests_stdin.egg-info/top_level.txt
