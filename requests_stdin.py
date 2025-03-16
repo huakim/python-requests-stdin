@@ -1,20 +1,19 @@
 from requests.adapters import BaseAdapter
 from requests import Response, codes
-import errno
-import os
-import stat
 import locale
-import io
 
 try:
     from io import BytesIO
 except ImportError:
     from StringIO import StringIO as BytesIO
 
+
 def input(prompt):
     from sys import stdin, stdout
-    print(prompt, end='', file=stdout, flush=True)
+
+    print(prompt, end="", file=stdout, flush=True)
     return stdin.read()
+
 
 class StdinAdapter(BaseAdapter):
     def __init__(self, _set_content_length=False):
@@ -32,7 +31,7 @@ class StdinAdapter(BaseAdapter):
         if request.method not in ("GET", "HEAD"):
             raise ValueError("Invalid request method %s" % request.method)
         url = request.url
-        e = url[(url.find('://') + 3):]
+        e = url[(url.find("://") + 3) :]
         resp = Response()
         resp.request = request
         resp_str = str(input(e)).encode(locale.getpreferredencoding(False))
